@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrarNotasActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="350dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:fontFamily="sans-serif-black"
+                android:inputType="number"
+                android:text="Primer Corte"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textInputMateria" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editTextNotaQuizP"
+                    android:layout_width="176dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="5dp"
+                    android:ems="10"
+                    android:hint="Nota Quiz"
+                    android:inputType="numberDecimal"
+                    app:layout_constraintEnd_toStartOf="@+id/editTextPorcentajeQuizP"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+                <EditText
+                    android:id="@+id/editTextPorcentajeQuizP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:ems="10"
+                    android:hint="Porcentaje"
+                    android:inputType="number"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteY="166dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/editTextNotaTallerP"
+                    android:layout_width="176dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="5dp"
+                    android:ems="10"
+                    android:hint="Nota Taller"
+                    android:inputType="numberDecimal"
+                    app:layout_constraintEnd_toStartOf="@+id/editTextPorcentajeTallerP"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextNotaExpoP" />
+
+                <EditText
+                    android:id="@+id/editTextPorcentajeTallerP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:ems="10"
+                    android:hint="Porcentaje"
+                    android:inputType="number"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextPorcentajeQuizP2" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/editTextNotaParcialTP"
+                    android:layout_width="176dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="5dp"
+                    android:ems="10"
+                    android:hint="Nota Parcial Teorico"
+                    android:inputType="numberDecimal"
+                    app:layout_constraintEnd_toStartOf="@+id/editTextPorcentajeParcialTP"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextNotaTallerP" />
+
+                <EditText
+                    android:id="@+id/editTextPorcentajeParcialTP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:ems="10"
+                    android:hint="Porcentaje"
+                    android:inputType="number"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextPorcentajeTallerP" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/editTextNotaParcialPP"
+                    android:layout_width="176dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="5dp"
+                    android:ems="10"
+                    android:hint="Nota Parcial Practico"
+                    android:inputType="numberDecimal"
+                    app:layout_constraintEnd_toStartOf="@+id/editTextPorcentajeParcialPP"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextNotaParcialTP" />
+
+                <EditText
+                    android:id="@+id/editTextPorcentajeParcialPP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:ems="10"
+                    android:hint="Porcentaje"
+                    android:inputType="number"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextPorcentajeParcialTP" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="Segundo Corte"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editTextNotaQuizS"
+                    android:layout_width="176dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="5dp"
+                    android:ems="10"
+                    android:hint="Nota Quiz"
+                    android:inputType="numberDecimal"
+                    app:layout_constraintEnd_toStartOf="@+id/editTextPorcentajeQuizS"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+                <EditText
+                    android:id="@+id/editTextPorcentajeQuizS"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="20dp"
+                    android:ems="10"
+                    android:hint="Porcentaje"
+                    android:inputType="number"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteY="166dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/editTextNotaTallerS"
+                    android:layout_width="176dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="5dp"
+                    android:ems="10"
+                    android:hint="Nota Taller"
+                    android:inputType="numberDecimal"
+                    app:layout_constraintEnd_toStartOf="@+id/editTextPorcentajeTallerS"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextNotaExpoS" />
+
+                <EditText
+                    android:id="@+id/editTextPorcentajeTallerS"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:ems="10"
+                    android:hint="Porcentaje"
+                    android:inputType="number"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextPorcentajeQuizS" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/editTextNotaParcialTS"
+                    android:layout_width="176dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="5dp"
+                    android:ems="10"
+                    android:hint="Nota Parcial Teorico"
+                    android:inputType="numberDecimal"
+                    app:layout_constraintEnd_toStartOf="@+id/editTextPorcentajeParcialTS"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextNotaTallerS" />
+
+                <EditText
+                    android:id="@+id/editTextPorcentajeParcialTS"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:ems="10"
+                    android:hint="Porcentaje"
+                    android:inputType="number"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextPorcentajeTallerS" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/editTextNotaParcialPS"
+                    android:layout_width="176dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="5dp"
+                    android:ems="10"
+                    android:hint="Nota Parcial Practico"
+                    android:inputType="numberDecimal"
+                    app:layout_constraintEnd_toStartOf="@+id/editTextPorcentajeParcialPS"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextNotaParcialTS" />
+
+                <EditText
+                    android:id="@+id/editTextPorcentajeParcialPS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:ems="10"
+                    android:hint="Porcentaje"
+                    android:inputType="number"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextPorcentajeParcialTS" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="Tercer Corte"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editTextNotaQuizT"
+                    android:layout_width="176dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="5dp"
+                    android:ems="10"
+                    android:hint="Nota Quiz"
+                    android:inputType="numberDecimal"
+                    app:layout_constraintEnd_toStartOf="@+id/editTextPorcentajeQuizT"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+                <EditText
+                    android:id="@+id/editTextPorcentajeQuizT"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:ems="10"
+                    android:hint="Porcentaje"
+                    android:inputType="number"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteY="166dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/editTextNotaTallerT"
+                    android:layout_width="176dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="5dp"
+                    android:ems="10"
+                    android:hint="Nota Taller"
+                    android:inputType="numberDecimal"
+                    app:layout_constraintEnd_toStartOf="@+id/editTextPorcentajeTallerT"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextNotaExpoT" />
+
+                <EditText
+                    android:id="@+id/editTextPorcentajeTallerT"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:ems="10"
+                    android:hint="Porcentaje"
+                    android:inputType="number"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextPorcentajeQuizT" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/editTextNotaParcialTT"
+                    android:layout_width="176dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="5dp"
+                    android:ems="10"
+                    android:hint="Nota Parcial Teorico"
+                    android:inputType="numberDecimal"
+                    app:layout_constraintEnd_toStartOf="@+id/editTextPorcentajeParcialTT"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextNotaTallerT" />
+
+                <EditText
+                    android:id="@+id/editTextPorcentajeParcialTT"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:ems="10"
+                    android:hint="Porcentaje"
+                    android:inputType="number"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextPorcentajeTallerT" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/editTextNotaParcialPT"
+                    android:layout_width="176dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="5dp"
+                    android:ems="10"
+                    android:hint="Nota Parcial Practico"
+                    android:inputType="numberDecimal"
+                    app:layout_constraintEnd_toStartOf="@+id/editTextPorcentajeParcialPT"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextNotaParcialTT" />
+
+                <EditText
+                    android:id="@+id/editTextPorcentajeParcialPT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:ems="10"
+                    android:hint="Porcentaje"
+                    android:inputType="number"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextPorcentajeParcialTT" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Gestión de Notas"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinnerMateria"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextId" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="14dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerMateria"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnRegistrar"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#4CAF50"
+        android:text="REGISTRAR"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnVerTodos"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="#03A9F4"
+        android:text="VER TODOS"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnActualizar"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="#00BCD4"
+        android:text="ACTUALIZAR"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRegistrar"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnEliminar"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="#FF5722"
+        android:text="ELIMINAR"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnVerTodos"
+        tools:ignore="MissingConstraints" />
+
+
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="Id"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerMateria"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/editTextId"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+</androidx.constraintlayout.widget.ConstraintLayout>
